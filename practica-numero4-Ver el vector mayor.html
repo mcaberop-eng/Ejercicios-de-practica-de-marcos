@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <h3>Generador de vectores ingresados por el usuario y visualizacion del mayor de todos</h3>
+    </body>
+    <script>
+        let vector=[];
+        let cantidad=
+        parseInt(prompt("Ingrese los vectores a cargar: "));
+       for(let i=0;i<cantidad;i++){
+        let numero=Math.floor(Math.random()*100)+1;
+        vector.push(numero);
+       }
+       console.log("Vectores generados",vector)
+       let Mayor= vector[0]
+       for(let i=1;i<vector.length;i++){
+        if(vector[i]> Mayor) {
+            Mayor=vector[i];
+        }
+       }
+       document.write("Los vectores generados son: "+vector+ "<br>");
+       document.write("el vector mayor es "+Mayor + "<br>");
+       console.log("El vector mayor es ", Mayor)
+    </script>
+</html>

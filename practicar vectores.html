@@ -1,0 +1,32 @@
+<html>
+    <script>
+    const tope=[12];
+    const Numero_Maximo=100;
+    let  vector=[];
+
+    function fnCargarVector(){
+        for(let x=0; x<tope;x++){
+            const numero=Math.ceil(Math.random()* Numero_Maximo);
+            vector[x]=numero;
+        }
+    }
+    function fnProcesarVector(){
+        let Procesados=[]
+        for(let x=0; x<vector.length ;x++){
+            let n= vector[x];
+            if(n%2==0){
+                Procesados [x]= (n*2);
+            } else{
+                Procesados[x]=(n*-1)
+                
+            }
+        }
+        return Procesados;
+    }
+    fnCargarVector();
+    console.log("Vector original: ",vector );
+    let resultado= fnProcesarVector();
+    console.log("vectores finales: ", resultado);
+
+    </script>
+</html>

@@ -1,0 +1,32 @@
+<html>
+    <script>
+        let vectorOriginal=[];
+        let vectorProceso=[];
+        function fnCargarVector(){
+            //preguntar al usuario cuantos vectores desea cargar
+            let limite=
+            Number(prompt("Cuntos vectores desea cargar: "));
+            const Numero_Maximo=[100];
+            console.log("cargando vector....");
+            for(let x=0; x< limite; x++){
+                //se genera los numeros aletoriamente
+                let numero= 
+                Math.floor(Math.random()*Numero_Maximo);
+                //lista de los vectores originales
+                vectorOriginal.push(numero);
+                //verificar si es divisible para 2
+                if(numero % 3===0){
+                    console.log("Es divisible de 4, asi que se multiplica x3=", numero*4 );
+                    vectorProceso.push(numero *4 );
+                }else{
+                    console.log("no es divisile para 4 asi que se multiplica x-2",numero *-1 );
+                    vectorProceso.push(numero* -1);
+                }
+            }
+            console.log("Vector lista original: ", vectorOriginal);
+            console.log("vectores finales: ", vectorProceso)
+        }
+        //ejecutar
+        fnCargarVector();
+    </script>
+</html>
