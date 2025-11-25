@@ -1,0 +1,36 @@
+<html>
+    <title>Numeros pares e impares</title>
+    <body>
+        <h3> ejercicios de numeros par e impar </h3>
+    </body>
+<script>
+     let vector=[];
+        let cantidad=
+        parseInt(prompt("Ingrese los vectores a cargar: "));
+       for(let i=0;i<cantidad;i++){
+        let numero=Math.floor(Math.random()*100)+1;
+        vector.push(numero);
+       }
+       console.log("Vectores cargados: ", vector);
+    
+    let numeroPar=[];
+    let NumeroImpar=[];
+    for(let i=0;i< vector.length;i++){
+        let n=vector[i];
+        if (n%2==0){
+         numeroPar.push(n);
+        } else{
+            NumeroImpar.push(n);
+        }
+    }
+   
+
+    console.log("los vectores pares: ", numeroPar);
+    console.log("numero impar ", NumeroImpar);
+    document.write("numeros cargado por el vector:"+ vector+ "<br>");
+    document.write("Los numeros pares son "+ numeroPar+ "<br>");
+
+    document.write("Los numeros impares son: "+ NumeroImpar+ "<br>");
+</script>
+</html>
+
