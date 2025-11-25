@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primera suma de marcos</title>
+</head>
+<body>
+    <h4> La suma total es</h4>
+</body>
+<script>
+//aqui se ingresa el total de numero que ingresaremos//
+let cantidad=
+parseInt(prompt("Ingrese el numero de valores que va a sumar: "));
+//en esta variable se guardara la sumatoria de los numeros ingresados//
+let suma= 0; 
+for(let i=1; i<=cantidad;i++){
+    let numero=
+    parseFloat(prompt("Ingrese el numero "+ i+ ":"));
+    suma=suma+numero; //va sumando los numeros que ingresemos//
+}
+document.write("La suma total es:"+suma );
+
+</script>
+</html>
